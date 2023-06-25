@@ -14,8 +14,8 @@ Highcharts.addEvent(
                     id: 'DFS Platform',
                     marker: {
                         symbol: 'url(Photos/DFS Platform.png)',
-                        width: '50',
-                        height: '50',
+                        width: '90',
+                        height: '90',
                         title: 'DFS Platfor'
                     }
                 };
