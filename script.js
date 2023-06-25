@@ -25,7 +25,7 @@ Highcharts.addEvent(
                         symbol: 'url(Photos/USSD.png)',
                         width: '30',
                         height: '30',
-                        
+
                     }
                 };
                 nodes['SSL Wireless'] = {
@@ -34,7 +34,25 @@ Highcharts.addEvent(
                         symbol: 'url(Photos/SSL Wireless.png)',
                         width: '50',
                         height: '30',
-                        
+
+                    }
+                };
+                nodes['BANK'] = {
+                    id: 'BANK',
+                    marker: {
+                        symbol: 'url(Photos/Bank.png)',
+                        width: '50',
+                        height: '30',
+
+                    }
+                };
+                nodes['Merchant'] = {
+                    id: 'Merchant',
+                    marker: {
+                        symbol: 'url(Photos/Marchant.png)',
+                        width: '50',
+                        height: '30',
+
                     }
                 };
 
@@ -42,7 +60,7 @@ Highcharts.addEvent(
                     nodes['DFS Platform'] = {
                         id: 'DFS Platform',
                         marker: {
-                            radius: 18
+                            radius: 38
                         },
                         color: 'RED'
                     };
