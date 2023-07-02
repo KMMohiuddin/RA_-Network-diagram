@@ -107,7 +107,7 @@ Highcharts.chart('container', {
                 enableSimulation: true,
                 integration: 'euler', //euler or  verlet
                 friction: -0.9,
-                linkLength: 25
+                linkLength: 50
             }
         }
     },
@@ -119,16 +119,28 @@ Highcharts.chart('container', {
         marker: {
             radius: 13
         },
+        
         dataLabels: {
             enabled: true,
-            textPath: {
-                enabled: true
+            linkTextPath: {
+                attributes: {
+                  dy: 10
+                }
             },
+            linkFormat: '{point.fromNode.name} \u2192 {point.toNode.name}',
             style: {
                 fontSize: '0.8em',
                 fontWeight: 'normal'
             },
-            linkFormat: '',
+            textPath: {
+                enabled: true,
+               /* attributes: {
+                  dy: 14,
+                  startOffset: '45%',
+                  textLength: 80
+                } */
+              },
+            format: 'Node: {point.name}',
             allowOverlap: false
         },
 
